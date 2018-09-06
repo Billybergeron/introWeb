@@ -1,9 +1,15 @@
 body{
     font-family:georgia, serif;
-    background: center no-repeat url("../images/fond.jpg");
+    background: no-repeat url("../images/fonds.jpg");
+    text-align: center;
+
 }
 h1 {
     color:blue;
     border: 1px solid black;
+
     text-align: center;
+}
+h2 {
+    color:deeppink;
 }
