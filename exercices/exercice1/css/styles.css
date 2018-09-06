@@ -1,0 +1,9 @@
+body{
+    font-family:georgia, serif;
+    background: center no-repeat url("../images/fonds.jpg");
+}
+h1 {
+    color:blue;
+    border: 1px solid black;
+    text-align: center;
+}
