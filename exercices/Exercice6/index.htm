@@ -13,14 +13,14 @@
 <body>
 	<div class="form-style">
 		<div class="Entete">Entrez les informations du membre</div>
-		<!-- formulaire ici -->
+		<form method="post" action="validation.php">
 		<p>
-			<label>Nom *</label>
+			<label>Nom <span>*</span></label>
 			<input id="Nom" name="Nom *" size="35"
 				   type="text" placeholder="" >
 		</p>
 		<p>
-			<label>Prénom *</label>
+			<label>Prénom <span>*</span></label>
 			<input id="Prénom" name="Nom *" size="35"
 				   type="text" placeholder="" >
 		</p>
@@ -35,41 +35,54 @@
 				   type="text" placeholder="" >
 		</p>
 		<p>
-			<label>Téléphone *</label>
+			<label>Téléphone <span>*</span></label>
 			<input id="Téléphone" name="Nom *" size="20"
 				   type="text" placeholder="999 999-9999" >
 		</p>
 		<p>
-			<label>Date d'inscription *</label>
+			<label>Date d'inscription <span>*</span></label>
 				<input id="Date" name="Nom *" size="20"
-				   type="text" placeholder="jj/ms/aaaa" >
+				   type="date" placeholder="jj/ms/aaaa" >
 		</p>
 		<p>
 			<label>Date de fin</label>
 			<input id="Date fin" name="date fin" size="20"
-				  type="texte"  placeholder="aaa - mm - jj" >
+				  type="date"  placeholder="aaa - mm - jj" >
 		</p>
 		<p>
 			<label>sexe</label>
 			<input id="m" type="radio" name="radgenre"
 				   value="masculin" checked>
-			<label>Masculin</label>
+			Masculin
 			<input id="f" type="radio" name="radgenre"
 				   value="Féminin">
-			<label>Féminin</label>
+			Féminin
 		</p>
 		<p>
 			<label>Choix</label>
-			<input id="choix" name="Nom *" size="35"
-				   type="text" placeholder="" >
+			<input type="text" list="etats" name="etats"size="21"placeholder="Mode de paiment">
+			<datalist id="etats">
+				<option value="american express">American Express</option>
+				<option value="mastercard">Mastercard</option>
+				<option value="visa">Visa</option>
+				<option value="discover">Discover</option>
+				<option value="carte aurore">Carte Aurore</option>
+				<option value="maestro">Maestro</option>
+				<option value="carte bancaire">Carte Bancaire</option>
+				<option value="privilège">Privilège</option>
+				<option value="4 étoiles">4 Étoiles</option>
+				<option value="jcb">JCB</option>
+
+			</datalist>
+
 		</p>
 		<p>
-			<label>Carte de crédit *</label>
+			<label>Carte de crédit <span>*</span></label>
 		<input id="Crédit" name="Nom *" size="20"
 			   type="text" placeholder="9999 9999 9999 9999" >
 	    </p>
 		<p>
-			<label>Mot de passe *</label>
+			<label>Mot de passe <span>*</span></label>
 			<input id="MDP" name="Nom *" size="35"
 				   type="text" placeholder="" >
 		</p>
@@ -78,6 +91,11 @@
 				<input id="Courriel" name="Nom *" size="35"
 				   type="text" placeholder="aaaaaa@aaaa.aaa" >
 		</p>
+		<p4>
+			<label></label>
+			<input type="submit" value="envoyer"> <input type="submit" value="réinitialiser">
+		</p4>
+		</form>
 	</div>
 </body>
 </html>
