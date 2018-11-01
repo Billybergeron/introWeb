@@ -19,5 +19,5 @@ function btnCalculer_onclick()
     {
         Nbr4 = Nbr4 * Nbr2 / Nbr1 - Nbr3
     }
-    document.getElementById("lblMessage").innerHTML = "le signe du résultat est " + Nbr4;
+    document.getElementById("lblMessage").innerHTML = "le résultat est " + Nbr4;
 }
