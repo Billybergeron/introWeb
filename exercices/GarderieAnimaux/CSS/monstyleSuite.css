@@ -3,13 +3,13 @@
   background-color:#ffcc66;
   font-family : "Arial", "Helvetica", sans-serif;
   background-repeat: no-repeat;
-  background-image:url(../img/animal.jpg);
+  background-image:url(../img/saitamoule.jpg);
 }
 
 .titre
 {
   font-family : "Lucida Handwriting","Lucia grande", sans-serif;
-  font-Size : 25px;
+  font-size : 25px;
   font-style:italic;
   font-weight:bold;
   padding-top:10px;
@@ -38,7 +38,7 @@ h1 {
 .label_plus {
 display:block;
 width:240px;
-float:center;
+float : left;
 margin-left: 245px;
 
 } 
