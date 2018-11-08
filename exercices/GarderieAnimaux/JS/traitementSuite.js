@@ -1,10 +1,10 @@
-function btnCalculer_onclick()
-{
-    var veterinaire,jours,prixtoil,rabais,tauxH,tarif,montant,tps,tvq,montantF,heures;
+var veterinaire,jours,prixtoil,rabais,tauxH,tarif,montant,tps,tvq,montantF,heures;
 
-    veterinaire = document.getElementById("lstVeterinaire").value;
-    jours = parseFloat(document.getElementById("txtNbreJours").value);
-    heures = parseFloat(document.getElementById("txtNbreheures").value);
+veterinaire = document.getElementById("lstVeterinaire").value;
+jours = parseFloat(document.getElementById("txtNbreJours").value);
+heures = parseFloat(document.getElementById("txtNbreheures").value);
+function texte()
+{
     if (document.getElementById("radChien").checked === true )
     {
         tarif = 18.50;
@@ -63,9 +63,9 @@ function btnCalculer_onclick()
     tvq = montant * 0.09975;
     tps = montant * 0.05;
     montantF = montant + prixtoil + tps + tvq;
-    document.getElementById("lblMessage").innerHTML = "le coût des soins de votre animal est de " + montantF;
-    if (montantF > 500)
-    {
-        document.getElementById("lblMessage2").innerHTML = "Finalement, je crois que tu est mieux de le laisser mourrir XD";
-    }
+}
+function btnCalculer_onclick()
+{
+alert("
+    texte();
 }
