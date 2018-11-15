@@ -17,3 +17,9 @@ var prixBase,age,prixTotal;
     prixTotal = prixBase;
     document.getElementById("lblMessage").innerHTML = "le cout pour regarder le film sera de: " + prixTotal;
 }
+function lstOption_onchange()
+{
+var film;
+film = document.getelementbyid("films").value;
+    document.getelementbyid("movie").src = ;
+}

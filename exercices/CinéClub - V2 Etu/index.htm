@@ -16,13 +16,14 @@
       <!-- Liste déroulante -->
       <p> Sélectionnez le choix du film:
          <select 
-           id="lstOptions" size=1 name="lstOptions">
-         	<option selected >Au poste!</option>
-         	<option >Colette</option>
+           id="films" size=1 name="lstOptions" onchange="lstOption_onchange()">
+         	<option value ="peter" selected >Peter (le film) value </option>
+         	<option value = "" >Colette</option>
          	<option >Halloween</option>
          	<option >La religieuse</option>
          </select>
       </p>
+      img = ""
       <!-- Radio bouton -->
       Midi<input type="radio" name="radChoix" checked="true" id="radMidi">
       Soir<input type="radio" name="radChoix" id="radSoir">
